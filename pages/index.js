@@ -1,18 +1,21 @@
 import React from 'react'
-import Main from './main';
-import Sidebar from './sidebar';
+import Main from './Main';
+import Sidebar from './Sidebar';
+import Header from './Header';
 
 const index = () => {
   return (
-    <div className='flex'>
-      <div className='flex-auto w-64'>
+    <>
+    <Header />
+    <div className='flex' style={{height: '100vh', width: '90vw', margin: 'auto'}}>
+      <div className='flex-auto' style={{ border: '2px solid black', width: '50vw'}}>
           <Main />
       </div>
-      <div className='flex-auto w-32'>
+      <div className='flex-auto w-12' style={{ border: '2px solid black'}}>
           <Sidebar />
       </div>
-
     </div>
+    </>
   )
 }
 
