@@ -13,7 +13,7 @@ const Section = () => {
             <div className='mt-9'>
             {
                data.map((item, index) => (
-                <Accordion className='mt-4 p-1' key={index} style={{width: '50vw'}}>
+                <Accordion className='mt-3' key={index} style={{width: '50vw'}}>
                 <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
