@@ -1,9 +1,8 @@
 import { Accordion, AccordionDetails, AccordionSummary, Button, Paper, Typography } from '@mui/material';
 import React from 'react'; 
-
 import data from '../data';
+
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-// import AddIcon from '@mui/icons-material/Add';
 import QuickreplyIcon from '@mui/icons-material/Quickreply';
 
 const Section = () => {
