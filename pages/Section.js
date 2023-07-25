@@ -7,7 +7,7 @@ import QuickreplyIcon from '@mui/icons-material/Quickreply';
 
 const Section = () => {
     return (
-    <div className='flex' style={{width: '90vw', margin: 'auto', borderBottom: '1px solid #D6D6D6'}}>
+    <div className='flex' style={{width: '90vw', margin: 'auto', borderBottom: '1px solid #D6D6D6', paddingBottom: '3rem'}}>
         <div className='flex-auto' style={{ width: '50vw'}}>
             <h4 className='font-semibold text-2xl' style={{ color: '#474747', marginTop: '4rem'}}>Frequently asked questions</h4>
             <div className='mt-9'>

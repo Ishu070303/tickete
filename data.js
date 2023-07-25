@@ -10,10 +10,10 @@ const data = [
 ];
 
 const trust = [
-    {id: 9, img: 'VerifiedIcon', title: 'Official tickets', desc: 'Authorised reseller to top attraction' },
-    {id: 10, img: 'MessageIcon', title: '24/7 dedicated support', desc: "We're here to help, talk to an expert" },
-    {id: 11, img: 'CalendarTodayIcon', title: 'Flexible bookings', desc: 'Book stress-free with easy cancellation' },
-    {id: 12, img: 'SecurityIcon', title: '100% secure payments', desc: 'Internationally recognized encrypted payment process' }
+    {id: 9, img: 'VerifiedIcon', color: '#008253', title: 'Official tickets', desc: 'Authorised reseller to top attraction' },
+    {id: 10, img: 'MessageIcon', color: '#7F2D0F', title: '24/7 dedicated support', desc: "We're here to help, talk to an expert" },
+    {id: 11, img: 'CalendarTodayIcon', color: '#707070', title: 'Flexible bookings', desc: 'Book stress-free with easy cancellation' },
+    {id: 12, img: 'SecurityIcon', color: '#1733B6', title: '100% secure payments', desc: 'Internationally recognized encrypted payment process' }
 ];
 
 export {data, trust};

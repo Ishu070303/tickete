@@ -103,7 +103,6 @@ const Main = () => {
 
     <p style={{fontWeight: '400', fontSize: '12px', marginTop: '2rem'}}>With payment, you agree to the general <span style={{color: '#1733B6'}}>terms and conditions</span> of Tickete & the <span style={{color: '#1733B6'}}>activity provider.</span></p>
     <Button variant="contained" endIcon={<SecurityIcon />} style={{ color: 'white', backgroundColor: 'black', marginTop: '1rem'}}>Confirm and pay</Button>
-
     </>
   )
 }

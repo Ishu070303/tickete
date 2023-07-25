@@ -9,7 +9,7 @@ const index = () => {
   return (
     <>
     <Header />
-    <div className='flex' style={{width: '90vw', margin: 'auto', marginTop: '3rem', borderBottom: '1px solid gray', paddingBottom: '1rem'}}>
+    <div className='flex' style={{width: '90vw', margin: 'auto', marginTop: '3rem', borderBottom: '1px solid gray', paddingBottom: '2rem'}}>
       <div className='flex-auto' style={{ width: '50vw'}}>
           <Main />
       </div>
