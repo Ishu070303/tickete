@@ -9,8 +9,8 @@ const index = () => {
   return (
     <>
     <Header />
-    <div className='flex' style={{width: '90vw', margin: 'auto', marginTop: '3rem', borderBottom: '1px solid gray', paddingBottom: '2rem'}}>
-      <div className='flex-auto' style={{ width: '50vw'}}>
+    <div className='flex' style={{width: '80vw', margin: 'auto', marginTop: '3rem', borderBottom: '1px solid gray', paddingBottom: '2rem'}}>
+      <div className='flex-auto' style={{ width: '30vw', borderRight:'1px solid gray'}}>
           <Main />
       </div>
       <div className='flex-auto w-12'>

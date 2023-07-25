@@ -7,13 +7,13 @@ import QuickreplyIcon from '@mui/icons-material/Quickreply';
 
 const Section = () => {
     return (
-    <div className='flex' style={{width: '90vw', margin: 'auto', borderBottom: '1px solid #D6D6D6', paddingBottom: '3rem'}}>
+    <div className='flex' style={{width: '80vw', margin: 'auto', borderBottom: '1px solid #D6D6D6', paddingBottom: '3rem'}}>
         <div className='flex-auto' style={{ width: '50vw'}}>
             <h4 className='font-semibold text-2xl' style={{ color: '#474747', marginTop: '4rem'}}>Frequently asked questions</h4>
             <div className='mt-9'>
             {
                data.map((item, index) => (
-                <Accordion className='mt-3' key={index} style={{width: '50vw'}}>
+                <Accordion className='mt-1' key={index} style={{width: '50vw'}}>
                 <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
@@ -31,7 +31,7 @@ const Section = () => {
         </div>
         <div className='flex-auto w-12'>
             <Paper style={{marginTop: '4rem', backgroundColor: '#FFF7ED', color: '#7F2D0F', height: '10vw'}}>
-                <div className='flex justify-between items-center ' style={{width: '18vw',margin:'auto'}}>
+                <div className='flex justify-between items-center ' style={{width: '14vw', margin:'auto'}}>
                     <div className='mt-5'>
                         <h6 className='font-semibold text-lg'>Need help?</h6>
                         <p className='text-base font-normal'>We're here to help, 24*7</p>

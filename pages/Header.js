@@ -4,7 +4,7 @@ import { QuestionIcon } from '@chakra-ui/icons';
 const Header = () => {
   return (
     <>
-     <div className='flex justify-between' style={{ width: '90vw', margin: 'auto', marginTop : '1rem'}}>
+     <div className='flex justify-between' style={{ width: '80vw', margin: 'auto', marginTop : '1rem'}}>
         <div style={{fontWeight: 'bold', fontSize: '20px' }}>
             tickete
         </div>

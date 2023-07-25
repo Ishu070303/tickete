@@ -34,12 +34,12 @@ const Footer = () => {
 
   return (
     <>
-    <div style={{width: '90vw', margin: 'auto', marginTop: '4rem'}}>
+    <div style={{width: '80vw', margin: 'auto', marginTop: '4rem'}}>
         <h4 className='font-semibold text-2xl' style={{ color: '#474747'}}>The Tickete promise</h4>
         <div className='flex justify-between mt-5'>
           {
             trust.map((item, index) => (
-                <Card key={index} className= 'mb-4' style={{ width: '20rem', border: '1px solid #D6D6D6'}}>
+                <Card key={index} className= 'mb-4 mr-2' style={{ width: '20rem', border: '1px solid #D6D6D6'}}>
                     <CardMedia className='ml-4 mt-2'>{getIconComponent(item.img, item.color)}</CardMedia>
                     <CardContent>
                         <Typography style={{color: '#474747'}} className='font-semibold text-base' variant='h6'>{item.title}</Typography>
