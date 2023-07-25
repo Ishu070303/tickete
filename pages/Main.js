@@ -1,8 +1,12 @@
 import React from 'react';
-import { TextField, FormControl, Select, MenuItem, InputLabel, Paper} from '@mui/material';
+import { TextField, FormControl, Select, MenuItem, InputLabel, Paper, Button} from '@mui/material';
+
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
+import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
+import SecurityIcon from '@mui/icons-material/Security';
 
+// import Klarna from './assets/Klarna.png';
 
 
 const Main = () => {
@@ -58,7 +62,7 @@ const Main = () => {
     
     <Paper style={{width: '47vw', marginTop: '1rem', padding: '5px'}}>
         <div className='flex justify-between font-semibold text-base' style={{ color: "#474747", }}>
-            <div className='flex justify-between' style={{width: '11rem'}}>
+            <div className='flex justify-between ml-1' style={{width: '11rem'}}>
                <CreditCardIcon/>
                <h6>Credit & debit card</h6>
             </div>
@@ -73,9 +77,32 @@ const Main = () => {
             <TextField style={{width: '22.7vw', color: '#D6D6D6'}} className='my-3 mr-2'  id="outlined-error-helper-text" label="CW/CVC" defaultValue="***"/>
         </div>
     </Paper>
-    <Paper>
-        
+    <Paper style={{width: '47vw', marginTop: '2rem', padding: '5px'}}>
+        <div className='flex justify-between font-semibold text-base' style={{ color: "#474747", }}>
+            <div className='flex justify-between ml-1' style={{width: '5rem'}}>
+               <CreditCardIcon />
+               <h6>Klarna</h6>
+            </div>
+            <div>
+                <RadioButtonUncheckedIcon style={{ cursor: 'pointer'}} />
+            </div>
+        </div>
     </Paper>
+
+    {/*total Calculation*/}
+    <h4 className='font-semibold font-2xl mt-8' style={{ color: '#474747'}}>Total: 20,000</h4>
+    <p className='font-normal underline' style={{ color: '#474747', fontSize: '12px'}}>You will pay in Currency '$'</p>
+
+    {/*offer Section*/}
+    <Paper style={{ backgroundColor: '#F5F5F5', width: '47vw', marginTop: '2rem', padding: '.6rem'}}>
+        <div className='flex items-center '>
+            <RadioButtonCheckedIcon className='mr-2'/>
+            <p className='font-semibold text-xs' style={{ color: '#474747'}}>Receive travel tips, suggestions and offers in Lucknow by email</p>
+        </div>
+    </Paper>
+
+    <p style={{fontWeight: '400', fontSize: '12px', marginTop: '2rem'}}>With payment, you agree to the general <span style={{color: '#1733B6'}}>terms and conditions</span> of Tickete & the <span style={{color: '#1733B6'}}>activity provider.</span></p>
+    <Button variant="contained" endIcon={<SecurityIcon />} style={{ color: 'white', backgroundColor: 'black', marginTop: '1rem'}}>Confirm and pay</Button>
 
     </>
   )
