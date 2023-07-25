@@ -3,6 +3,7 @@ import Main from './Main';
 import Sidebar from './Sidebar';
 import Header from './Header';
 import Section from './Section';
+import Footer from './Footer';
 
 const index = () => {
   return (
@@ -17,6 +18,7 @@ const index = () => {
       </div>
     </div>
     <Section />
+    <Footer />
     </>
   )
 }

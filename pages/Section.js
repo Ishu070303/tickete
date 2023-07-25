@@ -1,13 +1,13 @@
 import { Accordion, AccordionDetails, AccordionSummary, Button, Paper, Typography } from '@mui/material';
 import React from 'react'; 
-import data from '../data';
+import {data} from '../data';
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import QuickreplyIcon from '@mui/icons-material/Quickreply';
 
 const Section = () => {
     return (
-    <div className='flex' style={{ width: '90vw', margin: 'auto', borderBottom: '1px solid #D6D6D6', padding: '1rem'}}>
+    <div className='flex' style={{width: '90vw', margin: 'auto', borderBottom: '1px solid #D6D6D6'}}>
         <div className='flex-auto' style={{ width: '50vw'}}>
             <h4 className='font-semibold text-2xl' style={{ color: '#474747', marginTop: '4rem'}}>Frequently asked questions</h4>
             <div className='mt-9'>
