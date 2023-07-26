@@ -1,3 +1,4 @@
+"use-client"
 import React from 'react'
 import Main from './Main';
 import Sidebar from './Sidebar';
@@ -59,7 +60,7 @@ const index = () => {
     </div>
 
     <div className={classes.divDuplicate}>
-      <div style={{ width: '100vw', borderRight:'1px solid gray'}}>
+      <div style={{ width: '100vw'}}>
           <Sidebar />
       </div>
       <div  style={{width: '100vw'}}>
