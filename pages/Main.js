@@ -297,7 +297,7 @@ const useStyles = makeStyles((theme) => ({
 
       [theme.breakpoints.down('md')]: {
         width: '80vw', 
-        marginLeft: '2rem',
+        marginLeft: '2.5rem',
         marginTop: '1rem',
       }
     },
@@ -311,14 +311,31 @@ const useStyles = makeStyles((theme) => ({
       // border: '1px solid black',
       [theme.breakpoints.down('md')]: {
         display: 'block',
+        width: '80vw',
+        marginTop: '1rem',
+        margin: 'auto',
+        paddingBottom: '2rem',
+        borderBottom: '1px solid gray',
+      }
+    },
+  
+    CancelDivCopy: {
+      width: '23vw', 
+      margin: 'auto', 
+      marginTop: '2rem', 
+      marginLeft : '4rem',
+      display: 'none',
+      // border: '1px solid black',
+      [theme.breakpoints.down('md')]: {
+        display: 'block',
         width: '100vw',
         marginTop: '1rem',
         paddingBottom: '2rem',
         borderBottom: '1px solid gray',
-        marginLeft: 0
+        marginLeft : 0
       }
     },
-  
+
     cancelpaperDiv: {
       backgroundColor: '#F5F5F5', 
       padding: '1rem',
@@ -468,7 +485,7 @@ const Main = () => {
     </Paper>
 
     {/*========================== CANCEL SECTION IN BIG SCREENS ========================== */}  
-    <div className={classes.CancelDiv}>
+    <div className={classes.CancelDivCopy}>
       <Paper className={classes.cancelpaperDiv}>
         <h4 className={classes.cancelpaperDivh4}>Free cancellation</h4>
         <p className={classes.cancelpaperDivpara}>Cancel before 22 July for a full refund</p>
