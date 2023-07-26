@@ -13,7 +13,7 @@ const Sidebar = () => {
    {/*Card component*/}
    <div className='m-auto' style={{ borderBottom: '1px solid gray', width: '23vw', marginLeft : '4rem'}}>
    <Card  sx={{ maxWidth: 345 }} style={{marginBottom: '2rem'}}>
-    <CardMedia sx={{height: 140}}/>
+    <CardMedia sx={{height: 140}} image='sex.png'/>
     <CardContent>
       <Typography style={{ color: '#474747'}} className='text-lg font-semibold' variant='h4'> Amsterdam opeg boat canal cruise - Live Ggide - from Anne Frgnk House</Typography>
       <div className='mt-2 items-center'>

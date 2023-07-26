@@ -5,18 +5,69 @@ import Header from './Header';
 import Section from './Section';
 import Footer from './Footer';
 
+import { makeStyles } from '@mui/styles';
+
+const useStyles = makeStyles((theme) => ({
+    div: {
+      display: 'flex',
+      width: '80vw',
+      margin: 'auto', 
+      marginTop: '3rem', 
+      borderBottom: '1px solid gray',
+      paddingBottom: '3rem',
+
+      [theme.breakpoints.down('md')]:{
+           display: 'none'
+      }    
+    },
+
+    divDuplicate: {
+       display: 'none',
+
+       [theme.breakpoints.down('md')]: {
+        display: 'block',
+        width: '100vw',
+       }
+    },
+
+    mainDiv: {
+      flex: '1 1 auto',
+      width: '30vw', 
+      borderRight: '1px solid gray'
+    },
+
+    sidebarDiv: {
+      flex: '1 1 auto',
+      width: '3rem'
+    }
+}));
+
 const index = () => {
+
+  const classes = useStyles();
+
   return (
     <>
     <Header />
-    <div className='flex' style={{width: '80vw', margin: 'auto', marginTop: '3rem', borderBottom: '1px solid gray', paddingBottom: '2rem'}}>
-      <div className='flex-auto' style={{ width: '30vw', borderRight:'1px solid gray'}}>
+    <div className={classes.div}>
+      <div className={classes.mainDiv}>
           <Main />
       </div>
-      <div className='flex-auto w-12'>
+      <div className={classes.sidebarDiv}>
           <Sidebar />
       </div>
     </div>
+
+    <div className={classes.divDuplicate}>
+      <div style={{ width: '100vw', borderRight:'1px solid gray'}}>
+          <Sidebar />
+      </div>
+      <div  style={{width: '100vw'}}>
+          <Main />
+      </div>
+    </div>
+
+
     <Section />
     <Footer />
     </>
