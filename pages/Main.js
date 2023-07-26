@@ -6,8 +6,74 @@ import CreditCardIcon from '@mui/icons-material/CreditCard';
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import SecurityIcon from '@mui/icons-material/Security';
 
+import { makeStyles } from '@mui/styles';
+
 // import Klarna from './assets/Klarna.png';
 
+const useStyles = makeStyles((theme) => ({
+    PayText: {
+      color: '#474747',
+      fontWeight: '600',
+      fontSize: '3rem',
+
+      [theme.breakpoints.down('md')]: {
+        display: 'none',
+      }
+    },
+
+    detailsSection : {
+      color: '#474747',
+      fontWeight: '600',
+      fontSize: '1.5rem',
+      marginTop: '2.5rem',
+
+      [theme.breakpoints.down('md')]: {
+        fontSize: '18px',
+        width: '80vw',
+        margin: 'auto',
+        marginTop: '2rem'
+      }
+    },
+
+    detailsSectionpara: {
+      color: '#595959',
+      marginTop: '0.25rem',
+      fontSize: '16px',
+
+      [theme.breakpoints.down('md')]: {
+        fontSize: '14px',
+        width: '80vw',
+        margin: 'auto'
+      }
+    }, 
+
+    inputSection: {
+      width: '50vw',
+      display: 'flex',
+      flexWrap: 'wrap',
+      marginTop: '1.25rem',
+
+      [theme.breakpoints.down('md')]:{
+        display: 'block',
+        // border: '2px solid black',
+        width: '80vw',
+        margin: 'auto',
+        marginTop: '1rem'
+      },
+    },
+
+    TextField: {
+      width: '23vw', 
+      color: '#D6D6D6', 
+      marginTop: '0.75rem', 
+      marginBottom: '0.75rem', 
+      marginRight: '0.75rem',
+
+      [theme.breakpoints.down('md')]:{
+        width: '80vw'
+      }
+    }
+}));
 
 const Main = () => {
   const [country, setCountry] = React.useState('');
@@ -16,30 +82,34 @@ const Main = () => {
     setCountry(event.target.value);
   };
 
+  const classes = useStyles();
+
   return (
     <>
-    <h4 className='font-semibold text-5xl' style={{ color: '#474747'}}>
+    {/*===================== MAIN HEADING SECTION FOR BIG SCREENS ========================= */}
+    <h4 className={classes.PayText}>
        Confirm and pay
     </h4>
 
-    {/*Deatails Section */}
-    <h5 className='font-semibold text-2xl mt-10' style={{ color: '#474747'}}>Enter your details</h5>
-    <p className='text-base mt-1' style={{ color: '#595959'}}>We'll be sending your tickets to the details below. Booking for a friend? Add their details.</p>
+    {/*===================== DETAILS SECTION FOR BIG SCREENS AND SMALL SCREENS ========================= */}
+    <h5 className={classes.detailsSection} >Enter your details</h5>
+    <p  className={classes.detailsSectionpara} >We'll be sending your tickets to the details below. Booking for a friend? Add their details.</p>
 
-    <div className='flex flex-wrap mt-5' style={{ width: '50vw'}}>
-    <TextField style={{width: '23vw', color: '#D6D6D6'}} className='my-3 mr-3'  id="outlined-required" label="Full Name" defaultValue="Eshika Rawat" />
-    <TextField style={{width: '23vw', color: '#D6D6D6'}} className='my-3 mr-3'  id="outlined-required" label="Phone Number" defaultValue="+91 9151420781" />
-    <TextField style={{width: '23vw', color: '#D6D6D6'}} className='my-3 mr-3'  id="outlined-required" label="Email" defaultValue="eshikarawat02@gmail.com" />
-    <TextField style={{width: '23vw', color: '#D6D6D6'}} className='my-3 mr-3' error id="outlined-error-helper-text" label="Confirm Email" helperText="Email is not matching!" defaultValue="eshikarawat90@gmail.com"/>
+    {/*===================== INPUT SECTION FOR BIG SCREENS AND SMALL SCREENS ========================= */}
+    <div className={classes.inputSection}>
+    <TextField className={classes.TextField} id="outlined-required" label="Full Name" defaultValue="Eshika Rawat" />
+    <TextField className={classes.TextField} id="outlined-required" label="Phone Number" defaultValue="+91 9151420781" />
+    <TextField className={classes.TextField} id="outlined-required" label="Email" defaultValue="eshikarawat02@gmail.com" />
+    <TextField className={classes.TextField} error id="outlined-error-helper-text" label="Confirm Email" helperText="Email is not matching!" defaultValue="eshikarawat90@gmail.com"/>
     </div>
 
-    {/*Additional Information */}
-    <h5 className='font-semibold text-2xl mt-6' style={{ color: '#474747'}}>Additional information</h5>
-    <p className='text-base mt-1' style={{ color: '#595959'}}>We need a few more details to complete your reservation.</p>
+    {/* ====================== ADDITIONAL INFORMATION SECTION FOR BIG AND SMALL SCREENS ======================== */}
+    <h5 className={classes.detailsSection} >Additional information</h5>
+    <p className={classes.detailsSectionpara} >We need a few more details to complete your reservation.</p>
 
-    <div className='flex flex-wrap mt-5' style={{ width: '50vw'}}>
-    <TextField style={{width: '23vw', color: '#D6D6D6'}} className='my-3 mr-3'  id="outlined-required" label="Full Name" defaultValue="Eshika Rawat" />
-      <FormControl style={{width: '23vw', color: '#D6D6D6'}} className='my-3 mr-3'>
+    <div className={classes.inputSection}>
+    <TextField className={classes.TextField} id="outlined-required" label="Full Name" defaultValue="Eshika Rawat" />
+      <FormControl className={classes.TextField} >
         <InputLabel id="demo-simple-select-label">Country</InputLabel>
         <Select
           labelId="demo-simple-select-label"
@@ -56,7 +126,7 @@ const Main = () => {
       </FormControl>
     </div>
 
-    {/*Payment Mode*/}
+    {/* =================== PAYMENT MODE SECTION FOR BIG AND SMALL SCREENS ======================== */}
     <h5 className='font-semibold text-2xl mt-8' style={{ color: '#474747'}}>Select your mode of payment</h5>
     <p className='text-base mt-1' style={{ color: '#595959'}}>Payments with Tickete are secure and encrypted.</p>
     

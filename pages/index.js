@@ -63,7 +63,7 @@ const index = () => {
       <div style={{ width: '100vw'}}>
           <Sidebar />
       </div>
-      <div  style={{width: '100vw'}}>
+      <div >
           <Main />
       </div>
     </div>
