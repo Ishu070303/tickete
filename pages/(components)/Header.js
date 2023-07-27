@@ -2,55 +2,8 @@ import React from 'react';
 import { QuestionIcon} from '@chakra-ui/icons';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
-import { makeStyles } from '@mui/styles';
+import { useStyles } from './style';
 
-const useStyles = makeStyles((theme) => ({
-    container: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '80vw',
-      margin: 'auto',
-      marginTop: '1rem',
-      [theme.breakpoints.down('md')]:{
-        display: 'none'
-      }
-    },
-
-    head: {
-      fontWeight: 'bold',
-      fontSize: '20px'
-    },
-
-    containerDiv: {
-      color: '#474747',
-      fontSize: '16px'
-    },
-
-    icon: {
-      cursor: 'pointer',
-      color: '#474747',
-      marginRight: '.2rem'
-    },
-
-    leftIcon: {
-         margin: 'auto'
-    },
-
-    iconDiv: {
-      display: 'none',
-      [theme.breakpoints.down('md')]: {
-        display: 'block',
-        marginTop: '1rem',
-        width: '7vw',
-        height: '4vh',
-        backgroundColor : '#474747',
-        color: 'white',
-        borderRadius: '100%',
-        alignItems: 'center',
-        marginLeft: '2rem'
-      }
-    }
-}));
 
 const Header = () => {
 
