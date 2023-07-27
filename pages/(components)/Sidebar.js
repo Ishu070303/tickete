@@ -6,8 +6,11 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 
 import { Card, CardContent, CardMedia, Paper, Typography } from '@mui/material';
 import { useStyles } from './style';
-import babyMom from './(assests)/stocks.jpg'
+
+import babyMom from '../../public/images/stocks.jpg'
+
 import React from 'react';
+import Image from 'next/image';
 
 const Sidebar = () => {
   
@@ -19,7 +22,9 @@ const Sidebar = () => {
    {/*================= CARD COMPONENT SECTION FOR LARGE DEVICES ========================= */} 
    <div className={classes.SideDiv}>
    <Card  sx={{ maxWidth: 345 }} className={classes.sideCard}>
-    <CardMedia sx={{height: 140, objectFit: 'cover'}} component="img" src={babyMom} />
+    <CardMedia sx={{objectFit: 'cover'}}>
+      <Image src={babyMom} />
+    </CardMedia>
     <CardContent>
       <Typography className={classes.sideTypo} variant='h4'> Amsterdam opeg boat canal cruise - Live Ggide - from Anne Frgnk House</Typography>
       <div className={classes.contentDiv}>
