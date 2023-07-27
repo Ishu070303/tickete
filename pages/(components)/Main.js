@@ -7,6 +7,8 @@ import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import SecurityIcon from '@mui/icons-material/Security';
 
 import { useStyles } from './style';
+import Image from 'next/image';
+import Klarana from '../../public/images/Klarna.png';
 
 const Main = () => {
   const [country, setCountry] = React.useState('');
@@ -110,7 +112,7 @@ const Main = () => {
     <Paper className={classes.klarnaDiv}>
         <div className={classes.mainPaperDiv}>
             <div className={classes.klarnaPaperDiv}>
-               <CreditCardIcon style={{cursor: 'pointer'}} />
+               <Image src={Klarana} style={{cursor: 'pointer', marginRight: '1rem'}} />
                <h6>Klarna</h6>
             </div>
             <div>

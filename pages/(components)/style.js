@@ -334,7 +334,7 @@ export const useStyles = makeStyles((theme) => ({
       klarnaDiv: {
         width: '47vw', 
         marginTop: '2rem', 
-        padding: '5px',
+        padding: '10px',
         
         [theme.breakpoints.down('md')]: {
           width: '80vw',
