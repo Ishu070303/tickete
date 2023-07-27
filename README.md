@@ -11,7 +11,9 @@ The figma file:
 - Material UI
 - Chakra UI
 
-  
+## deployed link
+[Demo Link](https://precious-fudge-2d429b.netlify.app/)
+
 ## Final Image for big Screens : 
 ![sample screenshots](https://github.com/Ishu070303/tickete/blob/master/screencapture-localhost-3000-2023-07-27-19_07_04.png?raw=true) 
 
