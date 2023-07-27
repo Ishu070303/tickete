@@ -1,11 +1,4 @@
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Button,
-  Paper,
-  Typography,
-} from "@mui/material";
+import { Accordion, AccordionDetails, AccordionSummary, Button, Paper,Typography } from "@mui/material";
 import React from "react";
 import { data } from "../../data";
 
