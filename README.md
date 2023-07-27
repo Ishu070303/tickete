@@ -25,5 +25,20 @@ To run the project locally on your machine, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/tickete-frontend-assignment.git
-cd tickete-frontend-assignment
+git clone https://github.com/your-username/tickete.git
+cd tickete
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
+
+```bash
+npm run dev
+```
+
+4. The app will be available at http://localhost:3000 in your browser.
