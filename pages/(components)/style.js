@@ -910,4 +910,18 @@ export const useStyles = makeStyles((theme) => ({
             marginTop: '2rem'
         }
        },
+
+       Image: {
+        [theme.breakpoints.down('md')]: {
+            display: 'none',
+        }
+       },
+
+       ImageCopy: {
+        display: 'none',
+
+        [theme.breakpoints.down('md')]: {
+            display: 'block',
+        }
+       }
 }));
