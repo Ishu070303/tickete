@@ -60,7 +60,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     FooterCardMedia: {
-        marginLeft: '2rem',
+        marginLeft: '1rem',
         marginTop: '.5rem',
 
         [theme.breakpoints.down('md')]: {
