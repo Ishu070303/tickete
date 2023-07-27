@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down('md')]: {
         // border: '2px solid black',
-        width: '60vw',
+        width: '70vw',
         margin: 'auto'
     }
    },
@@ -139,10 +139,10 @@ const useStyles = makeStyles((theme) => ({
 
     [theme.breakpoints.down('md')]: {
         // border: '2px solid black',
-        marginLeft : '2rem'
+        marginLeft : '1rem',
+        marginBottom: '1rem'
     }
-   }
-
+   },
 }));
 
 const Section = () => {

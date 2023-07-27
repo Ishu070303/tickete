@@ -64,7 +64,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '.5rem',
 
         [theme.breakpoints.down('md')]: {
-            marginLeft: '.2rem',
+            marginLeft: '1rem',
             marginTop : 0
         }
     },
@@ -85,7 +85,97 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '14px', 
             width: '75vw'
         }
+    },
+
+    FooterEnd: {
+        backgroundColor: 'black', 
+        height: '30vh',
+        marginTop: '1.25rem'
+    },
+
+    FooterEndText: {
+        color: 'white', 
+        width: '90vw', 
+        margin:'auto',
+        paddingTop: '2.25rem',
+        paddingBottom: '2.25rem', 
+
+        [theme.breakpoints.down('md')]: {
+            fontSize: '24px',
+            width: '80vw',
+            margin: 'auto',
+            paddingBottom: '1.5rem',
+            paddingTop: '1.5rem'
+        }
+    },
+
+    FooterEndDiv: {
+        borderTop: '1px solid white', 
+        width:'90vw', 
+        margin: 'auto',
+        marginTop: '1rem',
+
+        [theme.breakpoints.down('md')]: {
+            border: 'none'
+        }
+    },
+
+    FooterEndDivChild: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: '1.25rem',
+    },
+
+    FooterEndUl: {
+        color: 'white', 
+        width: '27vw',
+        display: 'flex',
+        justifyContent: 'space-between',
+        listStyle: 'disc',
+
+        [theme.breakpoints.down('md')]: {
+            // border: '2px solid',
+            width: '90vw',
+            margin: 'auto',
+            marginTop: '1rem'
+        }
+    },
+
+    footerEndList: {
+        fontWeight: '400',
+        fontSize: '16px',
+
+        [theme.breakpoints.down('md')]: {
+            fontSize: '12px',
+            marginLeft: '1rem',
+            textDecoration: 'underline',
+        }
+    },
+
+    FooterEndDivChildCopy: {
+        display: 'flex', 
+        justifyContent: 'space-between', 
+        width: '5rem',
+
+        [theme.breakpoints.down('md')]: {
+            display: 'none'
+        }
+    },
+
+    FooterEndDivChildCopy2: {
+        display: 'none',
+
+        [theme.breakpoints.down('md')]: {
+            display: 'flex', 
+            justifyContent: 'space-between', 
+            width: '30vw',
+            margin: 'auto',
+            marginLeft: '2.1rem'
+        }
     }
+
+
 }));
 
 const Footer = () => {
@@ -132,20 +222,27 @@ const Footer = () => {
     </div>
 
     {/*=========================== FOOTER END SECTION FOR BIG AND SMALL SCREENS ================================= */}
-    <div className='mt-5' style={{ backgroundColor: 'black', height: '30vh'}}>
-        <Typography className='py-9' style={{color: 'white', width: '90vw', margin:'auto', }} variant='h3'>tickete</Typography>
+    <div className={classes.FooterEnd}>
+        <Typography className={classes.FooterEndText} variant='h3'>tickete</Typography>
 
-        <div className='mt-4' style={{borderTop: '1px solid white', width:'90vw', margin: 'auto'}}>
-            <div className='flex justify-between items-center mt-5'>
+        {/*=========================== FOOTER END SECTION FOR SMALL SCREENS ================================= */}
+        <div className={classes.FooterEndDivChildCopy2}>
+            <InstagramIcon style={{color :'white'}} />
+            <FacebookIcon  style={{color :'white'}}  />
+            <TwitterIcon  style={{color :'white'}}  />
+        </div>
+
+        <div className={classes.FooterEndDiv}>
+            <div className={classes.FooterDivChild}>
                 <div>
-                    <ul className='flex list-disc justify-between' style={{ color: 'white', width: '27vw'}}>
-                        <li className='font-normal text-base list-none'>© Tickete Inc.</li>
-                        <li className='font-normal text-base'>Privacy</li>
-                        <li className='font-normal text-base'>Terms</li>
-                        <li className='font-normal text-base'>Cancellation policy</li>
+                    <ul className={classes.FooterEndUl}>
+                        <li className={classes.footerEndList} style={{listStyle: 'none'}}>© Tickete Inc.</li>
+                        <li className={classes.footerEndList} >Privacy</li>
+                        <li className={classes.footerEndList} >Terms</li>
+                        <li className={classes.footerEndList} >Cancellation policy</li>
                     </ul>
                 </div>
-                <div className='flex w-20 justify-between'>
+                <div className={classes.FooterEndDivChildCopy}>
                     <InstagramIcon style={{color :'white'}} />
                     <FacebookIcon  style={{color :'white'}}  />
                     <TwitterIcon  style={{color :'white'}}  />

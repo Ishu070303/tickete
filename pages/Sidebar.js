@@ -206,7 +206,22 @@ const useStyles = makeStyles((theme) => ({
     color: '#595959',
     fontWeight: '400',
     fontSize: '14px',
-  }
+  },
+
+  type3: {
+    display: 'none',
+
+    [theme.breakpoints.down("md")]: {
+        display: 'block',
+        fontSize: '32px',
+        fontWeight: '600',
+        marginBottom: '2rem',
+        color: '#474747',
+        width: '80vw',
+        margin: 'auto',
+        marginTop: '2rem'
+    }
+   }
 
 }));
 
@@ -217,6 +232,8 @@ const Sidebar = () => {
 
   return (
    <>
+
+   <Typography variant='h5' className={classes.type3}>Confirm and pay</Typography>
    {/*================= CARD COMPONENT SECTION FOR LARGE DEVICES ========================= */} 
    <div className={classes.SideDiv}>
    <Card  sx={{ maxWidth: 345 }} className={classes.sideCard}>

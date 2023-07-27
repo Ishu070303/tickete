@@ -41,8 +41,8 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('md')]: {
         display: 'block',
         marginTop: '1rem',
-        width: '6vw',
-        height: '3vh',
+        width: '7vw',
+        height: '4vh',
         backgroundColor : '#474747',
         color: 'white',
         borderRadius: '100%',
