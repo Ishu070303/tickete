@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField, FormControl, Select, MenuItem, InputLabel, Paper, Button} from '@mui/material';
+import { TextField, FormControl, Select, MenuItem, InputLabel, Paper, Button, InputAdornment} from '@mui/material';
 
 import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
@@ -8,7 +8,10 @@ import SecurityIcon from '@mui/icons-material/Security';
 
 import { useStyles } from './style';
 import Image from 'next/image';
+
 import Klarana from '../../public/images/Klarna.png';
+import Visa from '../../public/images/visalogo.jpg';
+import Group from '../../public/images/Group.jpg'
 
 const Main = () => {
   const [country, setCountry] = React.useState('');
@@ -33,7 +36,7 @@ const Main = () => {
     {/*===================== INPUT SECTION FOR BIG SCREENS AND SMALL SCREENS ========================= */}
     <div className={classes.inputSection}>
     <TextField className={classes.TextField} id="outlined-required" label="Full Name" defaultValue="Eshika Rawat" />
-    <TextField className={classes.TextField} id="outlined-required" label="Phone Number" defaultValue="+91 9151420781" />
+    <TextField className={classes.TextField} id="outlined-required" label="Phone Number" defaultValue="+91 9151420781" InputProps={{ startAdornment: (<InputAdornment position='start'><Image src={Group} /></InputAdornment>)}} />
     <TextField className={classes.TextField} id="outlined-required" label="Email" defaultValue="eshikarawat02@gmail.com" />
     <TextField className={classes.TextField} error id="outlined-error-helper-text" label="Confirm Email" helperText="Email is not matching!" defaultValue="eshikarawat90@gmail.com"/>
     </div>
@@ -77,7 +80,7 @@ const Main = () => {
         </div>
         <div className={classes.paperInputDiv}>
             <TextField className={classes.paperTextField} id="outlined-required" label="Card Holder's Name" defaultValue="Eshika Rawat" />
-            <TextField className={classes.paperTextField} id="outlined-required" label="Card Number" defaultValue="43879151420781" />
+            <TextField className={classes.paperTextField} id="outlined-required" label="Card Number" defaultValue="43879151420781" InputProps={{ endAdornment: (<InputAdornment position='end'> <Image src={Visa} /> </InputAdornment>)}} />
             <TextField className={classes.paperTextField} id="outlined-required" label="Expiry Date" defaultValue="06/27" />
             <TextField className={classes.paperTextField} id="outlined-error-helper-text" label="CW/CVC" defaultValue="***"/>
         </div>
