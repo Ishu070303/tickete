@@ -6,7 +6,7 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 
 import { Card, CardContent, CardMedia, Paper, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import babyMom from './stocks.jpg';
+import babyMom from './(assests)/stocks.jpg'
 import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
@@ -237,7 +237,7 @@ const Sidebar = () => {
    {/*================= CARD COMPONENT SECTION FOR LARGE DEVICES ========================= */} 
    <div className={classes.SideDiv}>
    <Card  sx={{ maxWidth: 345 }} className={classes.sideCard}>
-    <CardMedia sx={{height: 140, objectFit: 'cover'}} component="img" image="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fmother-holding-up-baby-in-ocean&psig=AOvVaw0wTeQ50IEchkRDgB3nsLWK&ust=1690538627731000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMiStaTRroADFQAAAAAdAAAAABAI"  />
+    <CardMedia sx={{height: 140, objectFit: 'cover'}} component="img" src={babyMom} />
     <CardContent>
       <Typography className={classes.sideTypo} variant='h4'> Amsterdam opeg boat canal cruise - Live Ggide - from Anne Frgnk House</Typography>
       <div className={classes.contentDiv}>
