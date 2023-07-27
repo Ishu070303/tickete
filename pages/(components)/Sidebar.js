@@ -5,7 +5,7 @@ import ExtensionIcon from '@mui/icons-material/Extension';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
 
 import { Card, CardContent, CardMedia, Paper, Typography } from '@mui/material';
-import { useStyles } from './style';
+import useStyles from './style';
 
 import babyMom from '../../public/images/stocks.jpg';
 import GirlImage from '../../public/images/stockscopy.jpg';

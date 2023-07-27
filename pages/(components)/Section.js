@@ -4,7 +4,7 @@ import { data } from "../../data";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import QuickreplyIcon from "@mui/icons-material/Quickreply";
-import { useStyles } from "./style"
+import useStyles from "./style"
 
 const Section = () => {
   const classes = useStyles();

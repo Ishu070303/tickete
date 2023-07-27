@@ -2,7 +2,7 @@ import React from 'react';
 import { QuestionIcon} from '@chakra-ui/icons';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
-import { useStyles } from './style';
+import useStyles from './style';
 
 
 const Header = () => {

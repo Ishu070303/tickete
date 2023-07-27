@@ -6,7 +6,7 @@ import CreditCardIcon from '@mui/icons-material/CreditCard';
 import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
 import SecurityIcon from '@mui/icons-material/Security';
 
-import { useStyles } from './style';
+import useStyles from './style';
 import Image from 'next/image';
 
 import Klarana from '../../public/images/Klarna.png';

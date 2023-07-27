@@ -10,7 +10,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
 import { CardContent, CardMedia, Card, Typography } from "@mui/material";
-import { useStyles } from "./style";
+import useStyles from "./style";
 
 const Footer = () => {
   const getIconComponent = (iconName, color) => {

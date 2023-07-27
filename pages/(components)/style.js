@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
-export const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
     FooterDiv: {
       width: "80vw",
       margin: "auto",
@@ -925,3 +925,5 @@ export const useStyles = makeStyles((theme) => ({
         }
        }
 }));
+
+export default useStyles;
