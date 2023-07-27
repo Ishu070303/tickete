@@ -1,2 +1,3 @@
+# Tickete FrontEnd Task 
 
-[Sample Image](https://postimg.cc/3kz9zvCw)
+![sample screenshots](https://postimg.cc/pytj4Bw7)
